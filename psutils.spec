@@ -1,7 +1,7 @@
 Summary: PostScript Utilities
 Name: psutils
 Version: 1.17
-Release: 42%{?dist}
+Release: 44%{?dist}
 License: psutils
 Group: Applications/Publishing
 # We cannot use the upstream tarball because it contains non-free files.
@@ -101,6 +101,12 @@ make -f Makefile.unix \
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.17-44
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.17-43
+- Mass rebuild 2013-12-27
+
 * Tue Mar 26 2013 Jiri Popelka <jpopelka@redhat.com> - 1.17-42
 - few usage/man page fixes
 
