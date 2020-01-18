@@ -1,0 +1,9 @@
+#!/bin/bash
+archive_name=psutils-p17.tar.gz
+tar xzf psutils-p17.tar.gz
+rm psutils/fixmacps*
+rm psutils/md68_0.ps
+rm psutils/md71_0.ps
+patch -p0 < psutils-copyright.patch
+tar czf psutils-p17-clean.tar.gz psutils/
+rm -r psutils/

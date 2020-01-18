@@ -1,0 +1,35 @@
+diff -up psutils/epsffit.c.manpage psutils/epsffit.c
+--- psutils/epsffit.c.manpage	2013-03-26 14:29:40.000000000 +0100
++++ psutils/epsffit.c	2013-03-26 14:31:09.828141988 +0100
+@@ -34,7 +34,7 @@ static void usage(void)
+ {
+    fprintf(stderr, "%s release %d patchlevel %d\n", program, RELEASE, PATCHLEVEL);
+    fprintf(stderr, "Copyright (C) Angus J. C. Duggan, 1991-1995. See file LICENSE for details.\n");
+-   fprintf(stderr, "Usage: %s [-c] [-r] [-a] [-s] llx lly urx ury [infile [outfile]]\n",
++   fprintf(stderr, "Usage: %s [-c] [-r] [-a] [-m] [-s] llx lly urx ury [infile [outfile]]\n",
+ 	   program);
+    exit(1);
+ }
+diff -up psutils/psnup.man.manpage psutils/psnup.man
+--- psutils/psnup.man.manpage	2013-03-26 14:29:40.000000000 +0100
++++ psutils/psnup.man	2013-03-26 14:37:24.109882610 +0100
+@@ -32,7 +32,7 @@ psnup \- multiple pages per sheet
+ ] [
+ .B \-s\fIscale\fR
+ ] [
+-.B \-\fInup\fR
++.B \-n\fIup\fR
+ ] [
+ .B \-q
+ ] [
+diff -up psutils/psresize.man.manpage psutils/psresize.man
+--- psutils/psresize.man.manpage	2013-03-26 14:29:40.193375608 +0100
++++ psutils/psresize.man	2013-03-26 14:29:40.199375526 +0100
+@@ -1,6 +1,6 @@
+ .TH PSRESIZE 1 "PSUtils Release @RELEASE@ Patchlevel @PATCHLEVEL@"
+ .SH NAME
+-psresize \- multiple pages per sheet
++psresize \- rescale and centre the pages of a PostScript file
+ .SH SYNOPSIS
+ .B psresize
+ [
